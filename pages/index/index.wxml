@@ -1,12 +1,54 @@
 <!--index.wxml-->
 <view>
-<view class='page_row' bindtap="suo">
+<!-- 搜索框 -->
+  <view class='page_row' bindtap="search">
     <view class="search">
-      <view class="df search_arr">
+      <view class="search_arr">
         <icon class="searchcion" size='16' type='search'></icon>
         <input class="sousuo" disabled placeholder="搜索" bindtap='search'/>
       </view>
     </view>
   </view>
+<!-- 展示内容 -->
+  <view class="title">
+    <view class="title_name">热门书籍</view>
+    <view class="more">查看更多></view>
+  </view>
+
+  <view class="content_arr">
+    <view class="content">
+      <view class="content_image">图片</view>
+      <view class="content_title">书名</view>
+    </view>
+    <view class="content">
+      <view class="content_image">图片</view>
+      <view class="content_title">书名</view>
+    </view>
+    <view class="content">
+      <view class="content_image">图片</view>
+      <view class="content_title">书名</view>
+    </view>
+  </view>
+
+    <view class="title">
+    <view class="title_name">最近上架</view>
+    <view class="more">查看更多></view>
+  </view>
+
+  <view class="content_arr">
+    <view class="content">
+      <view class="content_image">图片</view>
+      <view class="content_title">书名</view>
+    </view>
+    <view class="content">
+      <view class="content_image">图片</view>
+      <view class="content_title">书名</view>
+    </view>
+    <view class="content">
+      <view class="content_image">图片</view>
+      <view class="content_title">书名</view>
+    </view>
+  </view>
+
 </view>
 

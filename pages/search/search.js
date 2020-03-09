@@ -11,7 +11,7 @@ Page({
   hideInput: function () {
     wx.navigateTo({
       //跳转，返回主页面路径
-      url: '../log1/log1'
+      url: '../index/index'
     })
   }
 })

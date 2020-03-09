@@ -1,35 +1,87 @@
 /**index.wxss**/
+/**搜索框样式**/
 .search{
-  width: 98%;
+  width: 100%;
+  background-color: black;
 }
 .search_arr {
   border: 1px solid #d0d0d0;
   border-radius: 10rpx;
-  margin-left: 20rpx;
+  margin-left: 25rpx;
+  margin-right: 25rpx;
+  margin-bottom: 20rpx;
 }
 .search_arr input{
   margin-left: 60rpx;
-  height: 60rpx;
+  height: 55rpx;
   border-radius: 5px;
 }
 .sousuo {
-  padding-left: 38%;
+  padding-left: 35%;
   width: 15%;
   line-height: 150%;
   text-align: center;
+  font-size: 25rpx;
 }
 .page_row{
   display: flex;
   flex-direction: row
 }
 .searchcion {
+  /* border: 1px solid #d0d0d0; */
   margin: 10rpx 10rpx 10rpx 10rpx;
   position: absolute;
-  margin-left:38%;
+  margin-left:40%;
   z-index: 2;
   width: 15px;
   height: 15px;
   text-align: center;
-    }
+}
+
+/* 内容框样式 */
+.title {
+  display: flex;
+  flex-direction: row;
+  margin-top: 30rpx;
+  width: 100%;
+  font-size: 28rpx;
+  font-weight: 500;
+}
+
+.title_name {
+  text-indent: 40rpx;
+  width: 80%;
+}
+
+.more {
+  color: green;
+}
+
+.content_arr {
+  margin-top: 30rpx;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.content {
+  border: 1px solid #d0d0d0;
+  display: flex;
+  flex-direction: column;
+  width: 180rpx;
+  margin-left: 50rpx;
+}
+
+.content_image {
+  border: 1px solid #d0d0d0;
+  height: 200rpx;
+}
+
+.content_title {
+  border: 1px solid #d0d0d0;
+  height: 40rpx;
+  text-align: center;
+  font-size: 25rpx;
+}
 
 
