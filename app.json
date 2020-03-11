@@ -2,7 +2,9 @@
   "pages": [
     "pages/index/index",
     "pages/logs/logs",
-    "pages/search/search"
+    "pages/search/search",
+    "pages/mine/mine",
+    "pages/more/more"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -10,19 +12,22 @@
     "navigationBarTitleText": "BTS-网上书城",
     "navigationBarTextStyle": "white"
   },
-  "tabBar":{
+  "tabBar": {
     "color": "#a9b7b7",
-    "list":[{
-      "pagePath": "pages/index/index",
-      "iconPath": "icon/shouye.png",
-      "selectedIconPath": "icon/shouye-2.png",
-      "text": "首页"
-    },{
-      "pagePath": "pages/index/index",
-      "iconPath": "icon/yonghu.png",
-      "selectedIconPath": "icon/yonghu-2.png",
-      "text": "我的"
-    }]
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "icon/shouye.png",
+        "selectedIconPath": "icon/shouye-2.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "iconPath": "icon/yonghu.png",
+        "selectedIconPath": "icon/yonghu-2.png",
+        "text": "我的"
+      }
+    ]
   },
   "style": "v2",
   "sitemapLocation": "sitemap.json"

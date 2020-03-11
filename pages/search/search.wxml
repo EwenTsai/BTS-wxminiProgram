@@ -12,6 +12,15 @@
       <!-- 取消搜索 -->
       <view class="weui-search-bar__cancel-btn" bindtap='hideInput'>取消</view>
     </view>
+
+    <!-- 搜索内容 -->
+    <view class="content">
+      <view class="content_image">图片</view>
+      <view class="content_describe">
+        <view class="content_title">书名</view>
+        <view class="content_intro">简介</view>
+      </view>
+    </view>
   </view>
 </view>
 

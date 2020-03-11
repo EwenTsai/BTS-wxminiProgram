@@ -44,3 +44,35 @@
   white-space: nowrap;
 }
 
+/* 搜索内容 */
+.content {
+  border: 1px solid #d0d0d0;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin-top: 30rpx;
+  margin-left: 30rpx;
+}
+
+.content_image {
+  border: 1px solid #d0d0d0;
+  width: 20%;
+  height: 200rpx;
+}
+
+.content_describe {
+  border: 1px solid #d0d0d0;
+  display: flex;
+  flex-direction: column;
+  margin-left: 30rpx;
+}
+
+.content_title{
+  border: 1px solid #d0d0d0;
+  width: 100%;
+  height: 40rpx;
+}
+
+.content_intro {
+  border: 1px solid #d0d0d0;
+}

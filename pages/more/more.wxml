@@ -1,0 +1,11 @@
+<!--pages/more/more.wxml-->
+<view wx:for="{{books}}" wx:for-index="idx" wx:for-item="book">
+    <view class="content">
+      <image src="{{book.imageAdress}}" style="width: 100px; height: 110px;"></image>
+      <view class="content_describe">
+        <view class="content_title">{{book.bookname}}</view>
+        <view class="content_rate">{{ book.rate }}分</view>
+        <view class="content_message">{{book.author}}/{{book.price}}元</view>
+      </view>
+    </view>
+</view>
