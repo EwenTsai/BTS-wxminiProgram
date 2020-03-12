@@ -1,0 +1,15 @@
+<!--pages/book/book.wxml-->
+<view class="content">
+  <image src="{{book.imageAdress}}" style="width: 130px; height: 185px"></image>
+  <view class="content_describe">
+    <view class="content_title">{{book.bookname}}</view>
+    <view class="content_intro">{{book.author}}/{{book.price}}元</view>
+    <button class="button_style">加入购物车</button>
+  </view>
+</view>
+
+<view class="title">关于作者</view>
+<view class="text">{{book.aboutAuthor}}</view>
+
+<view class="title">书本简介</view>
+<view class="text">{{book.intro}}</view>

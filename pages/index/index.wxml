@@ -18,8 +18,10 @@
   <view class="content_arr">
     <view wx:for="{{books}}" wx:key="idx" wx:for-item="book">
       <view class="content">
-        <image src="{{book.imageAdress}}" style="width: 100px; height: 110px"></image>
-        <view class="content_title">{{book.bookname}}</view>
+        <navigator url="../book/book?bookId={{book.id}}">
+          <image bindtap="book({{book.id}})" src="{{book.imageAdress}}" style="width: 100px; height: 110px"></image>
+          <view class="content_title">{{book.bookname}}</view>
+        </navigator>
       </view>
     </view>
   </view>
@@ -31,8 +33,10 @@
   <view class="content_arr">
       <view wx:for="{{saleBooks}}" wx:key="idx" wx:for-item="book">
       <view class="content">
-        <image src="{{book.imageAdress}}" style="width: 100px; height: 110px"></image>
-        <view class="content_title">{{book.bookname}}</view>
+        <navigator url="../book/book?bookId={{book.id}}">
+          <image src="{{book.imageAdress}}" style="width: 100px; height: 110px"></image>
+          <view class="content_title">{{book.bookname}}</view>
+        </navigator>
       </view>
     </view>
   </view>
