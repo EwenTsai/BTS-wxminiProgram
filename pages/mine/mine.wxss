@@ -1,1 +1,16 @@
 /* pages/mine/mine.wxss */
+.image_backgroud {
+  background-color: green;
+  width: 100%;
+  height: 400rpx;
+}
+
+.center {
+  width: 100%;
+  height: 30%;
+}
+
+.login_button {
+  background-color: white;
+  border-radius: 100rpx;
+}

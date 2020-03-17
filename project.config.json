@@ -23,7 +23,7 @@
 		}
 	},
 	"compileType": "miniprogram",
-	"libVersion": "2.10.2",
+	"libVersion": "2.10.3",
 	"appid": "wxaf2296592f00e75c",
 	"projectname": "BTS-wxminiProgram",
 	"debugOptions": {
