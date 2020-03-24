@@ -2,9 +2,15 @@
 <view class="image_backgroud">
   <view class="center"></view>
   <view wx:if="{{isLogin}}">
-    <image class="image"></image>
+    <image class="avatar" src="{{avatarUrl}}"></image>
+    <view class="nickName">{{nickName}}</view>
+    <view>
+    <navigator url="../orders/orders"><button>查看订单</button></navigator>
+  </view>
   </view>
   <view wx:else>
-    <button bindtap="onclick" open-type="getUserInfo" bindgetuserinfo="onclick">登陆</button>
+    <view style="width=30rpx"></view>
+    <button open-type='getUserInfo' lang="zh_CN" bindgetuserinfo="onGotUserInfo">登陆          </button>
   </view>
+
 </view>

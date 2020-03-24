@@ -6,58 +6,43 @@ Page({
    */
   data: {
     js_code: '',
-    isLogin:false,
-
+    isLogin: false,
+    nickName: '',
+    avatarUrl: '',
   },
-
-  onclick: function (e) {
-    console.log(e.detail.errMsg)
-    console.log(e.detail.userInfo)
-    console.log(e.detail.rawData)
-    // var that = this
-    // wx.login({
-    //   success: function (res) {
-    //     if(res.code){
-    //       that.js_code = res.code
-    //       wx.getUserInfo({
-    //         success:function (infoRes){
-    //           wx.request({
-    //             url: 'http://localhost:8080/BTS/api/user/wxLogin',
-    //             data: {
-    //               code: that.js_code
-    //             },
-    //             success: function (res) {
-    //               console.log('login success');
-    //               res = res.data;
-    //               if (res.result == 0) {
-    //                 that.globalData.userInfo = res.userInfo;
-    //                 wx.setStorageSync('userInfo', JSON.stringify(res.userInfo));
-    //                 wx.setStorageSync('loginFlag', res.skey);
-    //                 console.log("skey=" + res.skey);
-    //                 callback();
-    //               }
-    //             }
-    //           })
-    //         }
-    //       })
-    //     }
-    //   }
-    // })
-
-    // wx.login({
-    //   success: function(res) {
-    //     if(res.code){
-    //       that.getSessionKey(res.code, "wxaf2296592f00e75c", "5efdbb85521eed60f1a606d14b1b90f9")
-    //     }
-    //     console.log(res)
-    //   },
-    //   fail: function(res) {
-    //     console.log(res)
-    //   },
-    //   complete: function(res) {
-    //     console.log(res)
-    //   },
-    // })
+  onGotUserInfo: function (e) {
+    //获取头像昵称信息
+    this.setData({
+      nickName: e.detail.userInfo.nickName,
+      avatarUrl: e.detail.userInfo.avatarUrl
+    })
+    //后端登录
+    var that = this
+    wx.login({
+      success: function (res) {
+        if (res.code) {
+          that.js_code = res.code
+          wx.request({
+            url: 'http://localhost:8080/BTS/api/user/wxLogin',
+            data: {
+              code: that.js_code
+            },
+            success: function (res) {
+              //用户信息存在本地
+              wx.setStorage({
+                key: "uid",
+                data: res.data.data
+              })
+              that.setData({
+                isLogin: true
+              })
+            }
+          })
+        }
+      }
+    })
+  },
+  onclick: function () {
   },
   /**
    * 生命周期函数--监听页面加载

@@ -6,7 +6,8 @@
     "pages/mine/mine",
     "pages/more/more",
     "pages/book/book",
-    "pages/cart/cart"
+    "pages/cart/cart",
+    "pages/orders/orders"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -38,5 +39,6 @@
     ]
   },
   "style": "v2",
-  "sitemapLocation": "sitemap.json"
+  "sitemapLocation": "sitemap.json",
+  "debug": true
 }

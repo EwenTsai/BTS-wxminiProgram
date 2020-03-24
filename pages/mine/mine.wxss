@@ -14,3 +14,14 @@
   background-color: white;
   border-radius: 100rpx;
 }
+
+.avatar {
+  margin-left: 45%;
+  height: 50px;    
+  width: 50px;    
+  border-radius: 25px;
+}
+
+.nickName {
+  margin-left: 40%;
+}
