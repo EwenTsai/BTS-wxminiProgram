@@ -5,7 +5,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-    book: ''
+    book: []
   },
 
   /**
@@ -21,6 +21,21 @@ Page({
       success: function (res) {
         that.setData({
           book:res.data
+        })
+      }
+    })
+  },
+
+  addtoCart: function(){
+    wx.request({
+      url: 'http://localhost:8080/BTS/api/Cart/add',
+      data:{
+        uid: wx.getStorageSync('uid'),
+        bookId: this.data.book.id
+      },
+      success: function(res){
+        wx.switchTab({
+          url: '../cart/cart'
         })
       }
     })
