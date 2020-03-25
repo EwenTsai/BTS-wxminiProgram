@@ -1,1 +1,39 @@
 /* pages/cart/cart.wxss */
+/* pages/more/more.wxss */
+.content_arr {
+  display: flex;
+  flex-direction: row;
+}
+
+.content {
+  margin-top: 30rpx;
+  margin-left: 50rpx;
+  display: flex;
+  flex-direction: row;
+}
+
+.content_describe {
+  margin-left: 20rpx;
+  display: flex;
+  flex-direction: column;
+}
+
+.content_title {
+  font-size: 25rpx;
+  height: 40rpx;
+}
+
+.content_number{
+  font-size: 25rpx;
+}
+
+.content_message{
+  margin-top: 10rpx;
+  font-size: 22rpx;
+  color: gray;
+}
+
+.amount {
+  margin-left: 210rpx;
+  margin-top: 40rpx;
+}
