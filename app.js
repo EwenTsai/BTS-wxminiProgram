@@ -34,6 +34,6 @@ App({
     })
   },
   globalData: {
-    userInfo: null
+    host: 'http://localhost:8080/BTS/api'
   }
 })

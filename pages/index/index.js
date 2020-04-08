@@ -2,6 +2,10 @@
 //获取应用实例
 const app = getApp()
 
+import { getBook } from '../api/api'
+import { getHotBook } from '../api/api'
+import api from '../../utils/request'
+
 Page({
   data:{
     books: [],
@@ -19,43 +23,24 @@ Page({
     })
   },
   onLoad: function () {
-    var that = this;
-    wx.request({
-
-      url: "http://localhost:8080/BTS/api/Book",
-
-      data:{
-        pageNum: 0,
-        num: 3
-      },
-
-      success: function (res) {
-        that.setData({
-          books:res.data.content
+    //获取书本信息
+    api.get(getBook,{
+      pageNum: 0,
+      num: 3
+    }).then(res => {
+      }).catch(err => {
+        this.setData({
+          books: err.content
         })
-      },
-      fail: function (err) {
-        console.log(err)
-      }
-
-    })
-    wx.request({
-      url: 'http://localhost:8080/BTS/api/Book/sales',
-
-      data: {
-        pageNum: 0,
-        num: 3
-      },
-
-      success: function (res) {
-        that.setData({
-          saleBooks: res.data.content
+      })
+    //获取热门书本信息
+    api.get(getHotBook,{
+      num: 3
+    }).then(res => {
+      }).catch(err => {
+        this.setData({
+          saleBooks: err.content
         })
-      },
-      fail: function (err) {
-        console.log(err)
-      }
-
-    })
+      })
   },
 })

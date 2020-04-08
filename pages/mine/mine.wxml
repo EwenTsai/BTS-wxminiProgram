@@ -5,7 +5,6 @@
     <image class="avatar" src="{{avatarUrl}}"></image>
     <view class="nickName">{{nickName}}</view>
     <view>
-    <navigator url="../orders/orders"><button>查看订单</button></navigator>
   </view>
   </view>
   <view wx:else>

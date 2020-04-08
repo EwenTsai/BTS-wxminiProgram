@@ -27,7 +27,7 @@
   </view>
 
   <view class="title">
-    <view class="title_name">热卖书籍</view>
+    <view class="title_name">热门书籍</view>
   </view>
 
   <view class="content_arr">

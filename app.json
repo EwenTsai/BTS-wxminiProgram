@@ -5,9 +5,7 @@
     "pages/search/search",
     "pages/mine/mine",
     "pages/more/more",
-    "pages/book/book",
-    "pages/cart/cart",
-    "pages/orders/orders"
+    "pages/book/book"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -23,12 +21,6 @@
         "iconPath": "icon/shouye.png",
         "selectedIconPath": "icon/shouye-2.png",
         "text": "首页"
-      },
-      {
-        "pagePath": "pages/cart/cart",
-        "iconPath": "icon/yonghu.png",
-        "selectedIconPath": "icon/yonghu-2.png",
-        "text": "购物车"
       },
       {
         "pagePath": "pages/mine/mine",
